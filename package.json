@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "homepage": "https://jonrhymes.github.io/bookmarkd/",
-  "main": "./src/app.js",
+  "main": "index.js",
   "type": "module",
   "dependencies": {
     "parcel": "^1.12.4",
@@ -19,7 +19,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "NODE_ENV=dev parcel index.html --port 1984 --open",
-    "build": "node ./src/app.js"
+    "build": "parcel build index.html"
+
   },
   "keywords": [],
   "author": "",
