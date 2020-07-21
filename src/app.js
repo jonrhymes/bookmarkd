@@ -86,7 +86,7 @@ const App = (props) => {
                                             openEditForm(bookmark._id);
                                         }}
                                     >
-                                        ✎ &#xU+270F;
+                                        ✎;
                                     </button>
                                     <button
                                     className="main-app__bookmarks--delete"
