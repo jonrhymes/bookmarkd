@@ -17,7 +17,7 @@ const App = (props) => {
 
     // Function to get bookmarks from API
     const getInfo = async () => {
-        const response = await fetch('http://localhost:3000/bookmarks');
+        const response = await fetch('https://bookmarkd-api.herokuapp.com/bookmarks');
         const result = await response.json();
         setBookmarks(result);
     };
@@ -27,7 +27,7 @@ const App = (props) => {
     }, []);
 
     const handleDelete = async (id) => {
-        const response = await fetch(`http://localhost:3000/bookmarks/${id}`, {
+        const response = await fetch(`https://bookmarkd-api.herokuapp.com/bookmarks/${id}`, {
             method: "DELETE"
         })
         // Re-fetches the updated list of holidays
@@ -39,7 +39,7 @@ const App = (props) => {
     }
 
     const handleEdit = async (id, newData) => {
-        const response = await fetch(`http://localhost:3000/bookmarks/${id}`, {
+        const response = await fetch(`https://bookmarkd-api.herokuapp.com/bookmarks/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ const App = (props) => {
 
 
     const handleCreate = async (data) => {
-        const response = await fetch('http://localhost:3000/bookmarks', {
+        const response = await fetch('https://bookmarkd-api.herokuapp.com/bookmarks/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
