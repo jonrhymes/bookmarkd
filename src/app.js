@@ -1,7 +1,7 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import './css/style.scss';
-// import Form from './form.js'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './css/style.scss';
+import Form from './form.js'
 
 const App = (props) => {
 
