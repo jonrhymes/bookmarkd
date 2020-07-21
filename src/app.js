@@ -62,7 +62,6 @@ const App = (props) => {
         getInfo();
     }
     return (
-        <>
             <div className="main-app">
             <h1 className="main-app__title">/B/ookmark\'d</h1>
                 <h3 className="main-app__create">Create a bookmark</h3>
@@ -112,7 +111,6 @@ const App = (props) => {
             </ul>
             </div>
             </div>
-        </>
     )
 };
 
